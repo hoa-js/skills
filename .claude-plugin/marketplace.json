@@ -1,0 +1,15 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "hoa-js",
+  "owner": {
+    "name": "hoa-js",
+    "url": "https://github.com/hoa-js"
+  },
+  "plugins": [
+    {
+      "name": "hoa-skill",
+      "source": "./",
+      "description": "Skills for the hoajs framework"
+    }
+  ]
+}
