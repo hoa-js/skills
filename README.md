@@ -8,6 +8,41 @@ It provides the `hoajs` skill for explaining hoajs concepts, writing and reviewi
 
 - `hoajs`
 
+
+## Installation
+
+### Claude Code marketplace installation
+
+If you use Claude Code with plugin marketplace support, add this repository as a marketplace and then install the plugin:
+
+```bash
+/plugin marketplace add hoa-js/skills
+/plugin install hoa-skill@hoa-js
+```
+
+Equivalent CLI commands:
+
+```bash
+claude plugin marketplace add hoa-js/skills
+claude plugin install hoa-skill@hoa-js
+```
+
+This installs the Claude Code plugin defined by `.claude-plugin/plugin.json` and exposed through `.claude-plugin/marketplace.json`.
+
+### `npx skills` installation
+
+If you want to install the standalone skill into a skills-compatible runtime, use:
+
+```bash
+npx skills add hoa-js/skills
+```
+
+The installer reads the repository `skills/` directory and installs the `hoajs` skill into the active runtime. Depending on your environment and `skills` CLI version, you may also choose a target agent explicitly with the CLI's runtime selection flags.
+
+### Manual/reference use
+
+If your runtime does not support automatic skill installation, you can still open `skills/hoajs/SKILL.md` directly and use it as a reference document or paste the relevant sections into your agent workflow.
+
 ## Use this plugin for
 
 - Understanding hoajs architecture, middleware execution, routing, `ctx`, `ctx.req`, and `ctx.res`.
